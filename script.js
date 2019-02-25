@@ -47,11 +47,11 @@ case "Demosthenes" : console.log("Demosthenes was 42 during this speech.");break
 default : console.log("You must not have entered the name correctly, try again.");break}
 });
 
-//YEAR IS BCE  
+///YEAR IS BCE  
 if (speechesArray.yearIsBCE === true)
 {console.log("This speech took place before the common era.");}
 else
-{console.log("This speech took place before the common era.");}
+{console.log("This speech took place during the common era.");}
 
 
 
