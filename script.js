@@ -1,5 +1,6 @@
 //WHAT IS YOUR NAME WINDOW.PROMPT
-var user = window.prompt("What is your name?");
+window.onload = function()
+{var user = window.prompt("What is your name?");
  
 if (user === "" || user === null)
 {console.log("Ok, I will just call you  user.");}
@@ -31,10 +32,9 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
 
 
-//AUTHOR AGE WINDOW.PROMPT 
+//FAVORITE AUTHOR WINDOW.PROMPT 
 document.getElementById('BtnDonate').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Donate" button.
-    
+  //Code in here executes when the user clicks the "Donate" button.   
 var authorAge = window.prompt("Who is your favorite author?");
 switch (authorAge)
     
@@ -48,26 +48,31 @@ default : console.log("You must not have entered the name correctly, try again."
 });
 
 //YEAR IS BCE  
+if (speechesArray.yearIsBCE === true)
+{console.log("This speech took place before the common era.");}
+else
+{console.log("This speech took place before the common era.");}
 
-if ('yearIsBCE' >= 1000)
-{console.log("This speech took place during the common era.");}
-else ('yearIsBCE' <=500)
-{consol.log("This speech took place before the common era.");}
 
+
+//RECENT SPEECH
+if (churchillSpeech.year > ghandiSpeech.year && churchillSpeech.year > demosthenesSpeech.year)
+{console.log("This is the most recent speech on the page.")}
+else if (churchillSpeech.year < ghandiSpeech.year && churchillSpeech.year < demosthenesSpeech.year) 
+{console.log("This is the oldest speech on the page.");} 
 
 
 //CHURCHILL
 document.getElementById('BtnChurchill').addEventListener('click', function()
-{console.log("This speech was written by Churchill in 1940.");}             
+{console.log("This speech was written by Churchill in 1940.");});          
 //Code in here executes when the user clicks the "Churchill" button.
-    
-                                                         
+       
+                                                      
 //GHANDI
 document.getElementById('BtnGhandi').addEventListener('click', function()
-{console.log("This speech was written by Ghandi in 1942.");} 
+{console.log("This speech was written by Ghandi in 1942.");}    );
+
 //Code in here executes when the user clicks the "Ghandi" button.
 
 //DEMOSTHENES
-document.getElementById('BtnDemosthenes').addEventListener('click', function()
-{console.log("This speech was written by Demosthenes in 342.");} 
-//Code in here executes when the user clicks the "Demosthenes" button.
+document.getElementById('BtnDemosthenes').addEventListener('click', function(){console.log("This speech was written by Demosthenes in 342.");})}
