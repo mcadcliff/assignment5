@@ -70,4 +70,3 @@ document.getElementById('BtnGhandi').addEventListener('click', function()
 //DEMOSTHENES
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){console.log("This speech was written by Demosthenes in 342.");} 
 //Code in here executes when the user clicks the "Demosthenes" button.
-*/
